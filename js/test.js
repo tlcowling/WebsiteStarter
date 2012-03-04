@@ -1,5 +1,3 @@
-alert("Hi how are you doing?");
-
 function Point(x,y){
 	this.x = x;
 	this.y = y;
