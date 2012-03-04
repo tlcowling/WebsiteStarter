@@ -6,10 +6,15 @@
 <script type = "text/javascript" src = "js/jquery-1.7.1.min.js"></script>         
 <script type = "text/javascript" src = "js/test.js"></script>  
 <script type = "text/javascript" src = "js/bootstrap.min.js"></script>
+<script type = "text/javascript" src = "js/liveValidation.js"></script>
+<script type = "text/javascript" src = "js/profileValidation.js"></script>
+
 
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" charset="utf-8">     
 <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" charset="utf-8">
 <link rel="stylesheet" href="css/docs.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="css/portal.css" type="text/css" charset="utf-8">
+
 
 
 </head>
@@ -55,31 +60,84 @@
 				<!-- sidebar content -->
 				<ul class = "nav nav-list">
 					<li class = "nav-header">Form Navigation</li>
-					<li class = "active"><a href = "#"><i class = "icon-white icon-home"></i>Profile</a></li>
-					<li><a href = "#"><i class = "icon-pen"></i>Gratuity Form</a></li>
-					<li><a href = "#"><i class = "icon-book"></i>EPS</a></li>
+					<li class = "active"><a href = "#"><i class = "icon-white icon-user"></i>Profile</a></li>
+					<li><a href = "#"><i class = "icon-home"></i>Qualifications</a></li>
+					<li><a href = "#"><i class = "icon-book"></i>Gratuity Form</a></li>
+					<li><a href = "#"><i class = "icon-cog"></i>Dependents</a></li>
+					<li><a href = "#"><i class = "icon-flag"></i>EPS</a></li>
+					<li class = "nav-header">Form Progress</li>
+					<div class="progress progress-danger
+					     progress-striped active">
+					  <div class="bar"
+					       style="width: 40%;"></div>
+					</div>
 				</ul>
 			</div>
 				
 			
 		</div>
 		<div class = "span9">
+		<div class = "well">
 			<form class = "form-horizontal">
 				<fieldset>
-					<legend>Controls Bootstrap</legend>
+					<legend>Profile</legend>
 					<div class = "control-group">
-						<label class = "control-label" for="input01">Text Input</label>
+						<label class = "control-label" for="input01">First Name</label>
 						<div class = "controls">
-							<input type = "text" class="input-xlarge" id="input01">
-							<p class = "help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
+							<input type = "text" class="input-xlarge validate_required" id="input01">
 						</div>
 					</div>
-			
+					
+					<div class = "control-group">
+						<label class = "control-label" for="input02">Surname</label>
+						<div class = "controls">
+							<input type = "text" class="input-xlarge" id="input02">
+						</div>
+					</div>
+					
+					
+					<div class = "control-group">
+						<label class = "control-label" for="optionsCheckbox">Checkbox</label>
+						<div class = "controls">
+							<label class = "checkbox">
+								<input type = "checkbox" id="optionsCheckbox" value ="option1">Option One</input>
+								<input type = "checkbox" id="optionsCheckbox" value ="option2">Option Two</input>
+								<input type = "checkbox" id="optionsCheckbox" value ="option3">Option Three</input>
+							</label>
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class = "control-label" for="select01">Selection</label>
+						<div class = "controls">
+							<select id = "select01">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class = "control-group">
+						<label class = "control-label" for="multiSelect">Multicon-select</label>
+						<div class = "controls">
+							<select multiple="multiple" id="mulitSelect">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class = "form-actions">
+						<button type = "submit" class = "btn btn-primary">Save changes</button>
+						<button class = "btn">Cancel</button>
+					</div>
 				</fieldset>
 		
 			</form>
 	
-			
+		</div>	
 		</div>
 	</div>
 </div>

@@ -1,0 +1,23 @@
+.LV_valid {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/validation-valid.png");
+    margin-left: 5px;
+}
+
+.LV_invalid {
+    display: inline-block;
+    height: 16px;
+    padding-left: 20px;
+    background: url("../images/validation-invalid.png") no-repeat left center;
+    margin-left: 5px;
+}
+
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+    border: 1px solid #953B39;
+}
